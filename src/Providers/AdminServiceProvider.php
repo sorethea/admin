@@ -17,7 +17,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->registerConfig();
     }
 
-    public function registerConfig(){
+    protected function registerConfig(){
         $this->publishes([
             __DIR__.'/../Config/config.php'=>config_path($this->name.'.php')
         ],'admin-config');
