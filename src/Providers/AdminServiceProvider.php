@@ -10,6 +10,11 @@ class AdminServiceProvider extends ServiceProvider
         $this->registerConfig();
     }
 
+    public function register()
+    {
+        $this->app->register(FilamentServiceProvider::class);
+    }
+
     protected function registerConfig(){
         $this->publishes([
             __DIR__.'/../Config/config.php'=>config_path('admin.php')
