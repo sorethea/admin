@@ -1,26 +1,9 @@
 <?php
 
 namespace Sorethea\Admin\Providers;
-
-use Filament\PluginServiceProvider;
 use Illuminate\Support\ServiceProvider;
-use Sorethea\Admin\Filament\Resources\UserResource;
-use Spatie\LaravelPackageTools\Package;
-
-class AdminServiceProvider extends PluginServiceProvider
+class AdminServiceProvider extends ServiceProvider
 {
-    protected array $resources =[
-        UserResource::class,
-    ];
-    public function configurePackage(Package $package): void
-    {
-        $package->name('admin');
-    }
-
-    public function register()
-    {
-        //$this->app->register(FilamentServiceProvider::class);
-    }
 
     public function boot()
     {
