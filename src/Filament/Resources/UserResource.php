@@ -2,6 +2,9 @@
 
 namespace Sorethea\Admin\Filament\Resources;
 
+use Sorethea\Admin\Filament\Resources\UserResource\Pages\CreateUser;
+use Sorethea\Admin\Filament\Resources\UserResource\Pages\EditUser;
+use Sorethea\Admin\Filament\Resources\UserResource\Pages\ListUsers;
 use Sorethea\Admin\Filament\Resources\UserResource\RelationManagers;
 use Carbon\Carbon;
 use Filament\Forms;
@@ -42,9 +45,9 @@ class UserResource extends Resource
                         ->password()
                         ->visibleOn("create")
                         ->required(),
-//                    Forms\Components\SpatieMediaLibraryFileUpload::make("avatar")
-//                        ->collection("avatar")
-//                        ->columnSpan(2),
+                    Forms\Components\SpatieMediaLibraryFileUpload::make("avatar")
+                        ->collection("avatar")
+                        ->columnSpan(2),
                 ])->columnSpan(2)->columns(2),
                 Forms\Components\Card::make([
                     Forms\Components\Placeholder::make("created_at")
@@ -90,9 +93,9 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => \Sorethea\Admin\Filament\Resources\UserResource\Pages\ListUsers::route('/'),
-            'create' => \Sorethea\Admin\Filament\Resources\UserResource\Pages\CreateUser::route('/create'),
-            'edit' => \Sorethea\Admin\Filament\Resources\UserResource\Pages\EditUser::route('/{record}/edit'),
+            'index' => ListUsers::route('/'),
+            'create' => CreateUser::route('/create'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }
