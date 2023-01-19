@@ -6,6 +6,7 @@ namespace Sorethea\Admin\Providers;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
+use Livewire\Livewire;
 use Sorethea\Admin\Filament\Resources\RoleResource;
 use Sorethea\Admin\Filament\Resources\UserResource;
 use Spatie\LaravelPackageTools\Package;
@@ -19,6 +20,7 @@ class FilamentServiceProvider extends PluginServiceProvider
     }
     public function boot():void
     {
+        Livewire::component('EditRole',RoleResource\Pages\EditRole::class);
         Filament::serving(function (){
             if(config('admin.navigation.enabled'))
                 Filament::registerNavigationGroups([
