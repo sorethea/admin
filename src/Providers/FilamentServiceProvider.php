@@ -20,10 +20,10 @@ class FilamentServiceProvider extends PluginServiceProvider
     }
     public function boot():void
     {
-        Livewire::component('EditRole',RoleResource\Pages\EditRole::class);
-        Livewire::component('CreateRole',RoleResource\Pages\CreateRole::class);
-        Livewire::component('EditUser',UserResource\Pages\CreateUser::class);
-        Livewire::component('CreateUser',UserResource\Pages\EditUser::class);
+//        Livewire::component('EditRole',RoleResource\Pages\EditRole::class);
+//        Livewire::component('CreateRole',RoleResource\Pages\CreateRole::class);
+//        Livewire::component('EditUser',UserResource\Pages\CreateUser::class);
+//        Livewire::component('CreateUser',UserResource\Pages\EditUser::class);
         Filament::serving(function (){
             if(config('admin.navigation.enabled'))
                 Filament::registerNavigationGroups([
