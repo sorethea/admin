@@ -6,6 +6,7 @@ namespace Sorethea\Admin\Providers;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
+use Sorethea\Admin\Filament\Resources\RoleResource;
 use Sorethea\Admin\Filament\Resources\UserResource;
 use Spatie\LaravelPackageTools\Package;
 
@@ -30,6 +31,7 @@ class FilamentServiceProvider extends PluginServiceProvider
     protected function getResources(): array
     {
         return [
+            RoleResource::class,
             //UserResource::class,
         ];
     }
