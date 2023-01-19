@@ -20,7 +20,7 @@ class UserResource extends Resource
 
     protected static function getNavigationGroup(): ?string
     {
-        return config('admin.navigation.name');
+        return config('admin.navigation.name','Administrator');
     }
 
 
