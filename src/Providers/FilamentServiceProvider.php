@@ -35,7 +35,7 @@ class FilamentServiceProvider extends PluginServiceProvider
     {
         return [
             RoleResource::class,
-            //UserResource::class,
+            UserResource::class,
         ];
     }
 }
