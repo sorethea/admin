@@ -1,7 +1,8 @@
 {
     "name": "sorethea/admin",
     "description": "Laravel filament admin package",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "type": "filament-plugin",
     "license": "proprietary",
     "authors": [
         {
