@@ -12,7 +12,7 @@ use Spatie\LaravelPackageTools\Package;
 class FilamentServiceProvider extends PluginServiceProvider
 {
     protected array $resources = [
-        //UserResource::class,
+        UserResource::class,
     ];
     public function configurePackage(Package $package): void
     {
