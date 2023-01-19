@@ -11,6 +11,7 @@ use Spatie\LaravelPackageTools\Package;
 
 class FilamentServiceProvider extends PluginServiceProvider
 {
+    public static string $name = 'admin';
     public function configurePackage(Package $package): void
     {
         $package->name('admin');
