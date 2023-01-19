@@ -30,7 +30,7 @@ class FilamentServiceProvider extends PluginServiceProvider
     protected function getResources(): array
     {
         return [
-            UserResource::class,
+            //UserResource::class,
         ];
     }
 }
