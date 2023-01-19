@@ -2,15 +2,15 @@
 
 namespace Sorethea\Admin\Filament\Resources;
 
-use App\Filament\Resources\UserResource\Pages;
-use App\Filament\Resources\UserResource\RelationManagers;
+use Sorethea\Admin\Filament\Resources\UserResource\Pages;
+use Sorethea\Admin\Filament\Resources\UserResource\RelationManagers;
 use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Sorethea\Admin\Models\User;
+use App\Models\User;
 
 class UserResource extends Resource
 {
