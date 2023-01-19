@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class AdminServiceProvider extends ServiceProvider
 {
-    public string $name = 'admin';
 
     public function register()
     {
@@ -20,8 +19,8 @@ class AdminServiceProvider extends ServiceProvider
 
     protected function registerConfig(){
         $this->publishes([
-            __DIR__.'/../Config/config.php'=>config_path($this->name.'.php')
-        ],$this->name.'-config');
-        $this->mergeConfigFrom(__DIR__.'/../Config/config.php',$this->name);
+            __DIR__.'/../Config/config.php'=>config_path('admin.php')
+        ],'admin-config');
+        $this->mergeConfigFrom(__DIR__.'/../Config/config.php','admin');
     }
 }
