@@ -28,7 +28,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sorethea\\Admin\\Providers\\AdminServiceProvider"
+                "Sorethea\\Admin\\Providers\\AdminServiceProvider",
+                "Sorethea\\Admin\\FilamentServiceProvider"
             ],
             "aliases": {
                 "Admin": "Sorethea\\Admin\\Facades\\Admin"

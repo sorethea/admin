@@ -1,7 +1,6 @@
 <?php
 
-namespace Sorethea\Admin\Providers;
-
+namespace Sorethea\Admin;
 
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
