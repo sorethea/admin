@@ -9,6 +9,10 @@
             "email": "sorethea@gmail.com"
         }
     ],
+    "keywords": [
+        "sorethea",
+        "admin"
+    ],
     "require": {
         "filament/filament": "^2.16.62",
         "filament/spatie-laravel-media-library-plugin": "^2.16.62",
