@@ -11,12 +11,9 @@ use Spatie\LaravelPackageTools\Package;
 
 class FilamentServiceProvider extends PluginServiceProvider
 {
-    protected array $resources = [
-        UserResource::class,
-    ];
     public function configurePackage(Package $package): void
     {
-        $package->name('sorethea\admin');
+        $package->name('admin');
     }
     public function boot():void
     {
@@ -27,5 +24,12 @@ class FilamentServiceProvider extends PluginServiceProvider
                         ->label(config('admin.navigation.name'))
                 ]);
         });
+    }
+
+    protected function getResources(): array
+    {
+        return [
+            UserResource::class,
+        ];
     }
 }
