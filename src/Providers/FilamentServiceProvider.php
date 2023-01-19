@@ -21,6 +21,7 @@ class FilamentServiceProvider extends PluginServiceProvider
     public function boot():void
     {
         Livewire::component('EditRole',RoleResource\Pages\EditRole::class);
+        Livewire::component('CreateRole',RoleResource\Pages\CreateRole::class);
         Filament::serving(function (){
             if(config('admin.navigation.enabled'))
                 Filament::registerNavigationGroups([
