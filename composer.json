@@ -16,6 +16,11 @@
         "spatie/laravel-medialibrary": "10.*",
         "spatie/laravel-permission": "5.*"
     },
+    "autoload": {
+        "psr-4": {
+            "Sorethea\\Admin\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
