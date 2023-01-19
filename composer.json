@@ -28,7 +28,7 @@
                 "Sorethea\\Admin\\Providers\\FilamentServiceProvider"
             ],
             "aliases": {
-
+                "Admin": "Sorethea\\Admin\\Facades\\Admin"
             }
         }
     }

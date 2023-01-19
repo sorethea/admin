@@ -2,7 +2,6 @@
 
 namespace Sorethea\Admin\Filament\Resources;
 
-use Sorethea\Admin\Filament\Resources\UserResource\Pages;
 use Sorethea\Admin\Filament\Resources\UserResource\RelationManagers;
 use Carbon\Carbon;
 use Filament\Forms;
